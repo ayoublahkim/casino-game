@@ -1,0 +1,25 @@
+.cofeed-story {
+  float: left;
+  width: fit-content;
+  margin-left: 30px;
+}
+
+.cofeed-story-image {
+  border-radius: 50%;
+  width: 60px;
+  cursor: pointer;
+  height: 60px;
+  margin-top: 10px
+}
+
+.image-border-active{
+  border :3px solid var(--primary-color);
+}
+.image-border-inactive{
+  border :3px solid var(--disabled-color);
+}
+.cofeed-story-title {
+  text-align: center;
+  margin-bottom:5px;
+  flex:0 1 100%;
+}

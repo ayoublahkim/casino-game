@@ -1,0 +1,48 @@
+.cofeed-feed {
+  width: 75%;
+  margin: 15px 0px 5px 45px;
+  border-radius: 5%;
+  border: 3px solid white;
+}
+.feed-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex : 100%;
+  justify-content: flex-start;
+}
+
+.cofeed-feed-image {
+  border-radius: 50%;
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  margin-left: 45px
+}
+.cofeed-author {
+  margin-top: 5px;
+  flex: 0.4
+}
+.feed-icon{
+  font-size:2em;
+  flex: 0.1;
+  float:right;
+  cursor: pointer;
+  color: var(--disabled-color)
+}
+.feed-number{
+  padding-top: 5px;
+  flex: 0.2;
+
+}
+
+.image-border-active{
+  border :3px solid var(--primary-color);
+}
+.image-border-inactive{
+  border :3px solid var(--disabled-color);
+}
+.cofeed-story-title {
+  text-align: center;
+  margin-bottom:5px;
+  flex:0 1 100%;
+}

@@ -1,0 +1,24 @@
+<div style="display:flex">
+  <div style="flex:1;display:flex">
+    <div style="flex:50%">
+      <img [src]="suggestion?.source" style="border-radius: 50%;  width: 60px;  height: 60px;">
+    </div>
+
+    <div style="margin-top:10px;flex:50%">
+      <div style="margin-left: 30px;margin-bottom:5px;float: left;">{{suggestion?.name}}</div>
+      <div style="clear :both">
+        <a href="https://www.linkedin.com/in/ayoub-lahkim-934456122/"
+           class="disabled-cofeed"
+           style="margin-left: 30px;cursor: pointer;float: left;">{{suggestion?.tag}}</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex:50%">
+    <button (click)="onClick($event)" [ngClass]="{'unfollowed':!suggestion.followed,'followed':suggestion.followed}"
+            [style.opacity]="opacity"
+            (mouseenter)="opacity='100%'"
+            (mouseleave)="opacity='70%'" class="cofeed">
+      {{suggestion?.followed ? 'Followed' : 'Follow'}}</button>
+  </div>
+</div>

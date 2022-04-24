@@ -1,0 +1,8 @@
+<span  class="cofeed-story" (click)="selected=true">
+  <div>
+     <img [ngClass]="{'image-border-active':!selected,'image-border-inactive':selected}"
+          [src]="story?.source" class="cofeed-story-image">
+  </div>
+
+    <div class="cofeed-story-title">{{story?.title}}</div>
+</span>
