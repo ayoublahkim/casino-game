@@ -1,0 +1,24 @@
+<div class="card">
+  <div
+    [class.triangle-wrapper]="(game?.categories!.includes(categories.TOP) ||game?.categories!.includes(categories.NEW))">
+    <div [class.triangle]="(game?.categories!.includes(categories.TOP) || game?.categories!.includes(categories.NEW))">
+      <span
+        [class.triangle-text]="(game?.categories!.includes(categories.TOP) || game?.categories!.includes(categories.NEW))">
+       {{ game?.categories!.includes(categories.TOP) ? 'top' : game?.categories!.includes(categories.NEW) ? 'new' : ''}}
+      </span>
+    </div>
+  </div>
+  <div [style.cursor]="cursor"
+       (mouseenter)="opacity='70%'; cursor='pointer'"
+       (mouseleave)="opacity='100%'" [pTooltip]="game?.name!"
+       [tooltipPosition]="'bottom'">
+    <img [style.opacity]="opacity"
+         [src]="game?.image"
+         style="border-radius: 20px;">
+    <span class="text-centered">{{game?.jackpot | currency:"GBP":"symbol"}}</span>
+    <button style="left:40%" *ngIf="opacity==='70%'" pButton>Play</button>
+  </div>
+</div>
+
+
+

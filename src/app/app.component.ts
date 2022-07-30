@@ -2,7 +2,7 @@ import {Component, OnInit, Renderer2, RendererFactory2} from '@angular/core';
 import {NavigationError, Router} from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'casino-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

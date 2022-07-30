@@ -5,7 +5,7 @@ import {DOCUMENT} from '@angular/common';
  * @author Ayoub LAHKIM
  */
 @Component({
-  selector: 'cofeed-spinner',
+  selector: 'casino-spinner',
   template: `
     <div class="preloader" *ngIf="isSpinnerVisible">
       <div class="spinner">

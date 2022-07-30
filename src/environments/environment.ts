@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  baseServerUrl: 'https://cofeed.org',
-  baseApi: '/api/v1/prisonBreak',
+  apiUrl: 'http://stage.whgstage.com/front-end-test/'
 };
 
 /*

@@ -1,5 +1,5 @@
 {
-  "name": "cofeed",
+  "name": "casino",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,9 @@
     "watch": "ng build --watch --configuration development"
   },
   "dependencies": {
+    "ng-busy": "^13.0.0",
+    "primeflex": "3.2.1",
+    "primeng": "13.3.0",
     "@angular/animations": "~13.3.0",
     "@angular/cdk": "^13.3.0",
     "@angular/common": "~13.3.0",

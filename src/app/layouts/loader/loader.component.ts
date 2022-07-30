@@ -4,7 +4,7 @@ import {LoaderService} from './loader-service';
  * @author Ayoub LAHKIM
  */
 @Component({
-  selector: 'cofeed-loader',
+  selector: 'casino-loader',
   template: `
     <div class="preloader" *ngIf="loading">
       <div class="spinner">

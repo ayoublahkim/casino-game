@@ -1,4 +1,4 @@
-$primaryColor: #b0a06b !default;
+$primaryColor:#8DC63F; !default;
 $primaryLightColor: scale-color($primaryColor, $lightness: 60%) !default;
 $primaryDarkColor: scale-color($primaryColor, $lightness: -10%) !default;
 $primaryDarkerColor: scale-color($primaryColor, $lightness: -20%) !default;
@@ -7,4 +7,4 @@ $primaryTextColor: #ffffff !default;
 $highlightBg: $primaryColor;
 $highlightTextColor: $primaryTextColor;
 
-@import '../../sass/theme/_theme_light';
+@import 'src/assets/sass/sass/theme/theme_light';

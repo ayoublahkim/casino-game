@@ -1,2 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import 'src/assets/sass/layout/layout_light';
+@import "../node_modules/primeflex/primeflex.scss";
+@import "../node_modules/primeicons/primeicons.css";
+
+.p-tabview-title {
+  color: $textColor;
+}
+
+.p-tabview-nav-link {
+  background-color: $topBgColor !important;
+
+}
+
+.selected-tab {
+  .p-tabview-nav-link {
+    background-color: $primaryColor !important;
+  }
+}
+
+ul.p-tabview-nav > li {
+  flex: auto;
+}
+
+
+.card {
+  position: relative;
+}
+
+.card:first-of-type {
+  margin-right: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+.triangle-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.triangle {
+  float: right;
+  position: relative;
+  border-style: solid;
+  border-width: 0 65px 65px 0;
+  //border-top-right-radius: 20px;
+  border-color: transparent $primaryColor transparent transparent;
+  text-align: center;
+}
+
+.triangle-text {
+  color: $textColor;
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: -65px;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* card with ribbon */
+.ribbon {
+  //position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: 1;
+  overflow: hidden;
+  //width: 100px;
+  //height: 100px;
+  text-align: right;
+}
+
+/* card with ribbon */
+.ribbon span {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  //width: 115px;
+  display: block;
+  background: #f5431a;
+  //box-shadow: 0 0 10px 3px #ff6e4e;
+  position: absolute;
+  //top: 20px; right: -25px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card:first-of-type {
+    margin-right: 0;
+  }
+}
+
+.text-centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $textColor;
+  font-size: 1em;
+  font-weight: bold;
+}

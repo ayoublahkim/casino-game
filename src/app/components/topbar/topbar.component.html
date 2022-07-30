@@ -1,0 +1,25 @@
+<div [ngBusy]="busy$">
+
+  <p-tabView (onChange)="onChange($event)">
+
+    <p-tabPanel [cache]="true" [headerStyleClass]="currentIndex===index?'selected-tab':''"
+                *ngFor="let enum of categories | keyvalue: originalOrder; let index=index" [header]="enum.value">
+      <div class="fluid">
+        <div class="grid">
+          <div class="col-12 md-12">
+
+            <div class="field grid">
+              <div style="text-align:center" *ngIf="!games || !games.length"> No result found</div>
+              <div class="col-2 md-6" *ngFor="let game of games" style="margin: 10px;padding: 10px">
+                <casino-game [game]="game"></casino-game>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </p-tabPanel>
+  </p-tabView>
+
+</div>
+
+
